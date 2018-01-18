@@ -1,13 +1,17 @@
 #include<stdio.h>
-void main() 
+int main()
+{  
+int n,i,j; 
+printf("Enter the value of i:");
+scanf("%d",&i);
+printf("Enter the value of j:");
+scanf("%d",&j);
+for(n=i+1; n<j; n++) 
+{
+if(n%2==0) 
 { 
-int i,j,n;
-scanf("%d%d",&i,&j);
-for(n=i+1;n<j;n++)
-{
-if(n%2==0)
-{
-printf("%d",i);
-}
-}
-}
+printf("%d ",n); 
+}  
+}  
+return 0;  
+} 
