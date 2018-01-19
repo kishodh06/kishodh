@@ -2,7 +2,7 @@
 int main(void)
 {
  int n,a,d,l,sum=0;
- printf("Enetr the value of number of values:");
+ printf("Enter the value of number of values:");
  scanf("%d",&n);
  printf("Enter the value of number of series:");
  scanf("%d",&a);
