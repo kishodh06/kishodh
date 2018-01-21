@@ -1,11 +1,11 @@
 #include <stdio.h>
 int main(void)
 {
-int i,j,temp;
-scanf("%d%d",&i,&j);
-temp=i;	
-i=j;
-j=temp;
-printf("%d\t%d",i,j);
+int m,n,temp;
+scanf("%d%d",&m,&n);
+temp=m;	
+m=n;
+n=temp;
+printf("%d\t%d",m,n);
 return 0;
 }
