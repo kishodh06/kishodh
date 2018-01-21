@@ -1,18 +1,14 @@
 #include<stdio.h>
-int main(void) 
+void main() 
 {
-int value,count=0,r;
-scanf("%d",&value);
-while(value>0)
+char r;
+scanf("%s",&r);
+if(r>='0'&&r<='9')
 {
-r=value%10;
-if(r>=0 & r<=9)
-count++;
-value=value/10;
+    printf("Yes",r);
 }
-if(count==0)
-printf("No");
 else
-printf("Yes");
-return 0;
+{
+    printf("No",r);
+}
 }
