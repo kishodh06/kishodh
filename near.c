@@ -1,15 +1,10 @@
 #include<stdio.h>
 void main()
 {
-    int n;
-    scanf("%d",&n);
-    if(n%2==0)
-    {
-        printf("%d",n);
-    }
+    int a;
+    scanf("%d",&a);
+    if(a%2==0)
+    printf("%d",a);
     else
-    {
-       printf("%d",n-1);
-    
-    }
+    printf("%d",a-1);
 }
