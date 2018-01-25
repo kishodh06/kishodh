@@ -4,7 +4,12 @@ void main()
     int n;
     scanf("%d",&n);
     if(n%2==0)
-    printf("%d",n);
+    {
+        printf("%d",n);
+    }
     else
-    printf("%d",n-1);
+    {
+       printf("%d",n-1);
+    
+    }
 }
