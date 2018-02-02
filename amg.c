@@ -1,22 +1,22 @@
 #include<stdio.h>
 void main()
 {
-    int a[10],i,j,k,temp;
-    printf("Enter the limit ");
+    int a[10],b,j,k,temp;
+    printf("Enter the limit: ");
     scanf("%d",&k);
-    printf("Enter the array");
-    for(i=0;i<k;i++)
+    printf("Enter the numbers:");
+    for(b=0;b<k;b++)
     {
-        scanf("%d",&a[i]);
+        scanf("%d",&a[b]);
     }
-    for(i=0;i<k;i++)
+    for(b=0;b<k;b++)
     {
-        for(j=i+1;j<=k;j++)
+        for(j=b+1;j<=k;j++)
         {
-    if(a[i]>a[j])
+    if(a[b]>a[j])
     {
-        temp=a[i];
-        a[i]=a[j];
+        temp=a[b];
+        a[b]=a[j];
         a[j]=temp;
     }
         }
