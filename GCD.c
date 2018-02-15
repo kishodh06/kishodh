@@ -1,22 +1,21 @@
-#include<stdio.h>
-#include<conio.h>
-int gcd(int a,int b)
+
+#include <stdio.h>
+int main()
 {
-if(a==0||b==0)
-return 0;
-if(a==b)
-return a;
-if(a>b)
-{
-return gcd(a-b,b);
+    int n1, n2, j, gcd;
+
+    printf("Enter two integers: ");
+    scanf("%d %d", &n1, &n2);
+
+    for(j=1; j <= n1 && j <= n2; ++j)
+    {
+        
+        if(n1%j==0 && n2%j==0)
+            gcd = j;
+    }
+
+    printf("G.C.D of %d and %d is %d", n1, n2, gcd);
+
+    return 0;
 }
-return gcd(a,a-b);
-}
-void main()
-{
-int a,b;
-clrscr();
-scanf("%d%d",&a,&b);
-printf("%d",gcd(a,b));
-getch();
-}
+WWSQ
