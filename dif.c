@@ -8,9 +8,10 @@ int main(void)
 	scanf("%d",&d);
 	printf("\nEnter the end value: ");
 	scanf("%d",&b);
-	for(i=a;i<=b;i=i+d)
+	for(i=1;i<=b;i++)
 	{
-		sum+=i;
+		sum=sum+a;
+		a=a+d;
 	}
 	printf("\nThe answer is: %d\n",sum);
 	return 0;
